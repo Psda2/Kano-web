@@ -26,7 +26,7 @@ const Navbar = () => {
             <div className="relative w-32 h-16">
               <Image
                 src="/logo.jpg"
-                alt="Kano Travels"
+                alt="Kano travel & Tours"
                 fill
                 sizes="(max-width: 768px) 100px, 128px"
                 className="object-contain"

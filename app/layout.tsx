@@ -15,8 +15,8 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Kano Travels",
-  description: "Experience the beauty of Sri Lanka with Kano Travels",
+  title: "Kano travel & Tours",
+  description: "Experience the beauty of Sri Lanka with Kano travel & Tours",
 };
 
 export default function RootLayout({

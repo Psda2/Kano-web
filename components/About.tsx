@@ -8,7 +8,7 @@ const About = () => {
                 <div className="relative h-[500px] w-full rounded-xl overflow-hidden shadow-2xl">
                     <Image
                         src="/ella.png"
-                        alt="About Kano Travels"
+                        alt="About Kano travel & Tours"
                         fill
                         sizes="(max-width: 768px) 100vw, 50vw"
                         className="object-cover"
@@ -23,7 +23,7 @@ const About = () => {
                 <div className="text-left">
                     <h2 className="text-4xl font-serif font-bold text-[#003366] mb-6">Who We Are</h2>
                     <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                        Kano Travels is a leading local travel company based in Sri Lanka, dedicated to offering exciting and affordable travel packages across the island. From breathtaking hill country adventures to coastal getaways and cultural explorations, we bring the beauty of Sri Lanka closer to you.
+                        Kano travel & Tours is a leading local travel company based in Sri Lanka, dedicated to offering exciting and affordable travel packages across the island. From breathtaking hill country adventures to coastal getaways and cultural explorations, we bring the beauty of Sri Lanka closer to you.
                     </p>
 
                     <div className="space-y-8">

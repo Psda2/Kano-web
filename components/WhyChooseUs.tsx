@@ -64,7 +64,7 @@ const WhyChooseUs = () => {
         <section className="py-20 px-8 bg-white">
             <div className="max-w-7xl mx-auto text-center">
                 <RevealOnScroll>
-                    <h2 className="text-4xl font-serif font-bold text-[#003366] mb-16">Why Choose Kano Travels?</h2>
+                    <h2 className="text-4xl font-serif font-bold text-[#003366] mb-16">Why Choose Kano travel & Tours?</h2>
                 </RevealOnScroll>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {features.map((feature, index) => (
