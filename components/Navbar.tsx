@@ -16,7 +16,7 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navItems = ['Home', 'Services', 'Popular Destinations', 'About', 'Contact Us'];
+  const navItems = ['Home', 'Services', 'Packages', 'Popular Destinations', 'About', 'Contact Us'];
 
   return (
     <nav className={`fixed w-full z-50 transition-all duration-500 ease-in-out ${isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg py-3' : 'bg-black/10 backdrop-blur-[2px] py-6'}`}>
@@ -25,7 +25,7 @@ const Navbar = () => {
           <Link href="/" className="flex-shrink-0 flex items-center">
             <div className="relative w-32 h-16">
               <Image
-                src="/logo.jpg"
+                src="/logo-tourism.png"
                 alt="Kano travel & Tours"
                 fill
                 sizes="(max-width: 768px) 100px, 128px"

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kano Travel - Logo Studio</title>
+    
+    <!-- Google Fonts Collection -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Great+Vibes&family=Lato:wght@100;300;400;900&family=Montserrat:wght@400;700;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@400;600;800&family=Raleway:wght@300;800&family=Six+Caps&display=swap" rel="stylesheet">
+    
+    <!-- html2canvas for PNG Generation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+    <style>
+        :root {
+            --bg-color: #f3f4f6;
+            --brand-color: #0f172a; /* Default Dark Blue */
+            --accent-color: #d4af37; /* Gold */
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 40px;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        h1 { margin-bottom: 10px; }
+        p { color: #666; width: 600px; max-width: 100%; margin: 0 auto 20px auto; }
+
+        .controls {
+            background: white;
+            padding: 20px;
+            border-radius: 50px;
+            display: inline-flex;
+            align-items: center;
+            gap: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        input[type="color"] {
+            border: none;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            background: none;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 40px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .card-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .logo-card {
+            background: white;
+            height: 300px;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+            transition: transform 0.2s;
+            overflow: hidden;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .logo-card:hover { transform: translateY(-5px); }
+
+        /* Generic Download Button */
+        .btn-download {
+            background: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.9em;
+            transition: background 0.2s;
+            align-self: center;
+        }
+        .btn-download:hover { background: black; }
+
+        /* --- STYLES --- */
+
+        /* 1. The Luxury (Cinzel) */
+        .style-luxury h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 50px;
+            color: var(--brand-color);
+            margin: 0;
+            letter-spacing: 2px;
+        }
+        .style-luxury span {
+            font-family: 'Lato', sans-serif;
+            font-size: 12px;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            color: #888;
+            margin-top: 10px;
+            display: block;
+        }
+
+        /* 2. The Vogue (Six Caps) */
+        .style-vogue h2 {
+            font-family: 'Six Caps', sans-serif;
+            font-size: 120px;
+            line-height: 1;
+            color: var(--brand-color);
+            margin: 0;
+            letter-spacing: 4px;
+        }
+        .style-vogue span {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 12px;
+            text-transform: uppercase;
+            color: var(--accent-color);
+            display: block;
+            margin-top: -10px;
+        }
+
+        /* 3. The Minimal (Lato Thin) */
+        .style-minimal h2 {
+            font-family: 'Lato', sans-serif;
+            font-weight: 100; /* Ultra thin */
+            font-size: 60px;
+            color: var(--brand-color);
+            margin: 0;
+            letter-spacing: -2px;
+        }
+        .style-minimal span {
+            display: block;
+            width: 40px;
+            height: 1px;
+            background: var(--brand-color);
+            margin: 15px auto;
+        }
+        .style-minimal p {
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            font-size: 12px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #333;
+            margin: 0;
+            width: auto;
+        }
+
+        /* 4. The Signature (Great Vibes) */
+        .style-signature h2 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 80px;
+            color: var(--brand-color);
+            margin: 0;
+            transform: rotate(-5deg);
+        }
+        .style-signature span {
+            font-family: 'Poppins', sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+            color: #aaa;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            display: block;
+            margin-top: 10px;
+            transform: rotate(-5deg);
+        }
+
+        /* 5. The Bold Modern (Montserrat) */
+        .style-modern {
+            justify-content: center;
+        }
+        .style-modern h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            font-size: 50px;
+            text-transform: uppercase;
+            color: var(--brand-color);
+            margin: 0;
+            line-height: 0.9;
+            letter-spacing: -2px;
+            text-align: left;
+        }
+        .style-modern .circle {
+            width: 15px;
+            height: 15px;
+            background: var(--accent-color);
+            border-radius: 50%;
+            display: inline-block;
+            margin-left: 5px;
+        }
+        .style-modern p {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            letter-spacing: 1px;
+            color: #666;
+            margin: 5px 0 0 2px;
+            width: auto;
+            text-align: left;
+        }
+
+        /* 6. The Badge */
+        .style-badge .badge-container {
+            border: 3px solid var(--brand-color);
+            padding: 30px 50px;
+            position: relative;
+        }
+        .style-badge h2 {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 800;
+            font-size: 36px;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            color: var(--brand-color);
+            margin: 0;
+        }
+        .style-badge .est {
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: white;
+            padding: 0 10px;
+            font-family: 'Lato', sans-serif;
+            font-size: 10px;
+            color: #888;
+        }
+
+        /* 7. The Editorial (Playfair Italic) */
+        .style-editorial h2 {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 60px;
+            color: var(--brand-color);
+            margin: 0;
+        }
+        .style-editorial span {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 11px;
+            letter-spacing: 2px;
+            color: white;
+            background: var(--brand-color);
+            padding: 4px 10px;
+            border-radius: 20px;
+            margin-top: 15px;
+            display: inline-block;
+        }
+
+        /* 8. The Stacked */
+        .style-stacked { text-align: left; align-items: flex-start; padding-left: 40px; }
+        .style-stacked h2 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 800;
+            font-size: 40px;
+            line-height: 1;
+            color: var(--brand-color);
+            margin: 0;
+        }
+        .style-stacked h2 span { color: var(--accent-color); }
+        .style-stacked p {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            color: #888;
+            margin: 10px 0 0 0;
+            width: auto;
+            letter-spacing: 1px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Logo Design Studio</h1>
+        <p>Explore different vibes for "Kano Travel & Tours". Use the color picker to customize the brand color, then download the high-resolution PNG.</p>
+        
+        <div class="controls">
+            <label>Brand Color:</label>
+            <input type="color" id="brandColor" value="#0f172a">
+            <label>Accent Color:</label>
+            <input type="color" id="accentColor" value="#d4af37">
+        </div>
+    </header>
+
+    <div class="grid">
+
+        <!-- 1. Luxury -->
+        <div class="card-wrapper">
+            <div class="logo-card style-luxury" id="logo1">
+                <h2>KANO</h2>
+                <span>Travel & Tours</span>
+            </div>
+            <button class="btn-download" onclick="downloadLogo('logo1', 'kano_luxury')">Download PNG</button>
+        </div>
+
+        <!-- 2. Vogue -->
+        <div class="card-wrapper">
+            <div class="logo-card style-vogue" id="logo2">
+                <h2>KANO</h2>
+                <span>Travel & Tours</span>
+            </div>
+            <button class="btn-download" onclick="downloadLogo('logo2', 'kano_vogue')">Download PNG</button>
+        </div>
+
+        <!-- 3. Minimal -->
+        <div class="card-wrapper">
+            <div class="logo-card style-minimal" id="logo3">
+                <h2>KANO</h2>
+                <span></span>
+                <p>Travel & Tours</p>
+            </div>
+            <button class="btn-download" onclick="downloadLogo('logo3', 'kano_minimal')">Download PNG</button>
+        </div>
+
+        <!-- 4. Signature -->
+        <div class="card-wrapper">
+            <div class="logo-card style-signature" id="logo4">
+                <h2>Kano</h2>
+                <span>Travels</span>
+            </div>
+            <button class="btn-download" onclick="downloadLogo('logo4', 'kano_signature')">Download PNG</button>
+        </div>
+
+        <!-- 5. Modern Bold -->
+        <div class="card-wrapper">
+            <div class="logo-card style-modern" id="logo5">
+                <div>
+                    <h2>KANO<span class="circle"></span></h2>
+                    <p>TRAVEL & TOURS</p>
+                </div>
+            </div>
+            <button class="btn-download" onclick="downloadLogo('logo5', 'kano_modern')">Download PNG</button>
+        </div>
+
+        <!-- 6. Badge -->
+        <div class="card-wrapper">
+            <div class="logo-card style-badge" id="logo6">
+                <div class="badge-container">
+                    <h2>KANO</h2>
+                    <div class="est">2026</div>
+                </div>
+            </div>
+            <button class="btn-download" onclick="downloadLogo('logo6', 'kano_badge')">Download PNG</button>
+        </div>
+
+        <!-- 7. Editorial -->
+        <div class="card-wrapper">
+            <div class="logo-card style-editorial" id="logo7">
+                <h2>Kano Travel</h2>
+                <span>EST 2026</span>
+            </div>
+            <button class="btn-download" onclick="downloadLogo('logo7', 'kano_editorial')">Download PNG</button>
+        </div>
+
+        <!-- 8. Stacked -->
+        <div class="card-wrapper">
+            <div class="logo-card style-stacked" id="logo8">
+                <h2>KANO<br><span>TRAVEL</span></h2>
+                <p>EXPERIENCE THE WORLD</p>
+            </div>
+            <button class="btn-download" onclick="downloadLogo('logo8', 'kano_stacked')">Download PNG</button>
+        </div>
+
+    </div>
+
+    <script>
+        // Color Picker Logic
+        const brandColorInput = document.getElementById('brandColor');
+        const accentColorInput = document.getElementById('accentColor');
+        const root = document.documentElement;
+
+        brandColorInput.addEventListener('input', (e) => {
+            root.style.setProperty('--brand-color', e.target.value);
+        });
+
+        accentColorInput.addEventListener('input', (e) => {
+            root.style.setProperty('--accent-color', e.target.value);
+        });
+
+        // Download Logic
+        function downloadLogo(elementId, filename) {
+            const element = document.getElementById(elementId);
+            
+            // Allow time for fonts to render, though webfonts usually load by now
+            html2canvas(element, {
+                backgroundColor: null, // Transparent background
+                scale: 4 // High resolution (Retina quality)
+            }).then(canvas => {
+                const link = document.createElement('a');
+                link.download = `${filename}.png`;
+                link.href = canvas.toDataURL('image/png');
+                link.click();
+            });
+        }
+    </script>
+</body>
+</html>

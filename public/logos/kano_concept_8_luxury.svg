@@ -1,0 +1,32 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background/Frame: Elegant thin circle -->
+  <circle cx="150" cy="140" r="80" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+
+  <!-- Sun: Geometric rising sun -->
+  <path d="M100 140 A50 50 0 0 1 200 140" fill="none" stroke="#d4af37" stroke-width="1.5" />
+  <path d="M110 140 A40 40 0 0 1 190 140" fill="none" stroke="#d4af37" stroke-width="0.5" stroke-dasharray="2 4"/>
+
+  <!-- Sea: Abstract wavy lines -->
+  <path d="M80 155 Q 115 145, 150 155 T 220 155" fill="none" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M90 170 Q 125 160, 160 170 T 210 170" fill="none" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Palm Tree: Geometric/Minimalist -->
+  <!-- Trunk: elegant curve -->
+  <path d="M135 155 Q 130 115, 150 85" fill="none" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Leaves: Clean arcs -->
+  <!-- Left Leaf -->
+  <path d="M150 85 Q 120 85, 110 105" fill="none" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round"/>
+  <!-- Right Leaf -->
+  <path d="M150 85 Q 180 85, 190 105" fill="none" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round"/>
+  <!-- Top Center Leaf -->
+  <path d="M150 85 Q 150 55, 150 65" fill="none" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round"/>
+  <!-- Second Left -->
+  <path d="M150 90 Q 130 95, 120 115" fill="none" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Second Right -->
+  <path d="M150 90 Q 170 95, 180 115" fill="none" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Typography -->
+  <text x="150" y="240" font-family="'Times New Roman', serif" font-weight="bold" font-size="24" letter-spacing="6" text-anchor="middle" fill="#1a1a1a">KANO</text>
+  <text x="150" y="260" font-family="'Arial', sans-serif" font-weight="400" font-size="10" letter-spacing="3" text-anchor="middle" fill="#666" style="text-transform: uppercase;">Travel & Tours</text>
+</svg>

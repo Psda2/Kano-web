@@ -1,0 +1,12 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="300" fill="#ffffff"/>
+  <!-- Hexagon Badge -->
+  <path d="M150 20 L262 85 L262 215 L150 280 L38 215 L38 85 Z" fill="none" stroke="#10b981" stroke-width="4"/>
+  
+  <!-- Inner Content -->
+  <text x="150" y="140" font-family="Arial, sans-serif" font-weight="bold" font-size="34" text-anchor="middle" fill="#064e3b">KANO</text>
+  <text x="150" y="170" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#064e3b" letter-spacing="2">EST. 2026</text>
+  
+  <!-- Mountains/Simple Lines -->
+  <path d="M80 215 L120 170 L160 215 L200 180 L220 215" stroke="#10b981" stroke-width="2" fill="none"/>
+</svg>

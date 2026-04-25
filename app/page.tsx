@@ -2,6 +2,7 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Services from "@/components/Services";
+import Packages from "@/components/Packages";
 import Destinations from "@/components/Destinations";
 import Footer from "@/components/Footer";
 
@@ -12,6 +13,7 @@ export default function Home() {
       <About />
       <WhyChooseUs />
       <Services />
+      <Packages />
       <Destinations />
       <Footer />
     </main>

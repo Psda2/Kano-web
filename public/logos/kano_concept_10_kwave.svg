@@ -1,0 +1,12 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="300" fill="#f8f9fa"/>
+  <!-- The Icon: A stylized K formed by a vertical line and a wave -->
+  <!-- Vertical Bar -->
+  <rect x="80" y="50" width="30" height="200" fill="#0f172a"/>
+  <!-- The Wave / Chevron -->
+  <path d="M130 150 Q 180 150, 220 70 L 220 120 Q 180 180, 130 180 Z" fill="#3b82f6"/> <!-- Top part of K -->
+  <path d="M130 180 Q 180 180, 220 230 L 180 230 Q 150 200, 130 180 Z" fill="#0f172a"/> <!-- Bottom leg -->
+  
+  <!-- Text below -->
+  <text x="150" y="280" font-family="Arial, sans-serif" font-weight="700" font-size="24" text-anchor="middle" fill="#0f172a" letter-spacing="1">KANO</text>
+</svg>

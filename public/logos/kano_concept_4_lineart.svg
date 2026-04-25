@@ -1,0 +1,6 @@
+<svg width="150" height="100" viewBox="0 0 150 100" xmlns="http://www.w3.org/2000/svg">
+    <path d="M20 70 Q40 50 60 70 T100 70 T140 70" stroke="#0077be" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M30 60 Q50 40 70 60 T110 60" stroke="#4db8ff" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <circle cx="110" cy="30" r="12" fill="#ffcc00"/>
+    <text x="75" y="95" font-family="'Playfair Display', serif" font-size="14" text-anchor="middle" fill="#333">KANO TRAVEL</text>
+</svg>

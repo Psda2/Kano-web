@@ -5,6 +5,7 @@ import Image from 'next/image';
 
 const Hero = () => {
     const images = [
+        "/logo-hero.png",
         "/hero-horses.png",
         "/hero-lighthouse.png"
     ];
@@ -39,12 +40,12 @@ const Hero = () => {
             ))}
 
             {/* Overlay */}
-            <div className="absolute top-0 left-0 w-full h-full bg-black/30 z-10"></div>
+            <div className="absolute top-0 left-0 w-full h-full bg-black/10 z-10"></div>
 
             {/* Content */}
             <div className="relative z-20 flex flex-col items-center justify-center h-full text-center text-white px-4">
                 <h1 className="text-5xl md:text-7xl font-serif font-bold mb-4 drop-shadow-lg">
-                    Welcome to Kano travel & Tours
+                    Welcome to <br />Kano travel & Tours
                 </h1>
                 <p className="text-lg md:text-2xl max-w-2xl drop-shadow-md">
                     Explore the beauty of Sri Lanka with our personalized travel packages.

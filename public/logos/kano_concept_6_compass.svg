@@ -1,0 +1,20 @@
+<svg width="150" height="150" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
+    <!-- Sun Rays -->
+    <g transform="translate(75, 75)">
+        <circle r="25" fill="#f0ad4e" />
+        <line x1="0" y1="-35" x2="0" y2="-45" stroke="#f0ad4e" stroke-width="4" stroke-linecap="round" />
+        <line x1="25" y1="-25" x2="32" y2="-32" stroke="#f0ad4e" stroke-width="4" stroke-linecap="round" />
+        <line x1="35" y1="0" x2="45" y2="0" stroke="#f0ad4e" stroke-width="4" stroke-linecap="round" />
+        <line x1="25" y1="25" x2="32" y2="32" stroke="#f0ad4e" stroke-width="4" stroke-linecap="round" />
+        <line x1="0" y1="35" x2="0" y2="45" stroke="#f0ad4e" stroke-width="4" stroke-linecap="round" />
+        <line x1="-25" y1="25" x2="-32" y2="32" stroke="#f0ad4e" stroke-width="4" stroke-linecap="round" />
+        <line x1="-35" y1="0" x2="-45" y2="0" stroke="#f0ad4e" stroke-width="4" stroke-linecap="round" />
+        <line x1="-25" y1="-25" x2="-32" y2="-32" stroke="#f0ad4e" stroke-width="4" stroke-linecap="round" />
+    </g>
+    <!-- Compass Needle -->
+    <polygon points="75,45 65,75 75,105 85,75" fill="#003366" />
+    <circle cx="75" cy="75" r="5" fill="white" />
+    
+    <!-- Text -->
+    <text x="75" y="135" font-family="'Inter', sans-serif" font-weight="600" font-size="14" text-anchor="middle" fill="#333" letter-spacing="2">KANO</text>
+</svg>
